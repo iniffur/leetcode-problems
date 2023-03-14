@@ -7,4 +7,9 @@ const convertToKelvin = (celsius) => {
   return kelvinTemp;
 };
 
-module.exports = { convertTemperatures, convertToKelvin };
+const convertToFahrenheit = (celsius) => {
+  let fahrenheitTemp = celsius * 1.8 + 32;
+  return fahrenheitTemp;
+};
+
+module.exports = { convertTemperatures, convertToKelvin, convertToFahrenheit };
