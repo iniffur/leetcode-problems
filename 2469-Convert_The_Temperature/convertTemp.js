@@ -1,3 +1,10 @@
-const convertTemperature = (celsius) => {};
+const convertTemperatures = () => {
+  convertToKelvin();
+};
 
-module.exports = convertTemperature;
+const convertToKelvin = (celsius) => {
+  let kelvinTemp = celsius + 273.15;
+  return kelvinTemp;
+};
+
+module.exports = { convertTemperatures, convertToKelvin };
